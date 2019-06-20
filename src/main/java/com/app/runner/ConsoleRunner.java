@@ -20,7 +20,7 @@ public class ConsoleRunner implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-
+        System.out.println("");
 		System.out.println("----Sort----");
 		repo.findAll(Sort.by(Direction.DESC, "empId")).forEach(System.out::println);
 		System.out.println("----Example====");
